@@ -1,8 +1,14 @@
 # Работа номер 1
 ## Код
 ``` c
-#include <locale.h>
 #include <stdio.h>
+#include <locale.h>
+
+void hello()
+{
+    puts("Моя программа");
+    puts("Hello World!");
+}
 
 void name()
 {
@@ -25,6 +31,7 @@ void date()
 int main()
 {
     setlocale(LC_ALL, "RUS");
+    hello();
     name();
     date();
     getchar();
@@ -33,6 +40,8 @@ int main()
 ```
 ## Результат
 ```
+Моя программа
+Hello World!
 ************************************************
 *                                              *
 *   Тема: Разработка консольного приложения    *
